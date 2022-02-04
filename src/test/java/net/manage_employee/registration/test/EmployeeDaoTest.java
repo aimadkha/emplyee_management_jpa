@@ -1,4 +1,4 @@
-package net.manage_employee.registration.test;
+/*package net.manage_employee.registration.test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -56,3 +56,5 @@ public class EmployeeDaoTest {
 	}
 
 }
+
+*/
