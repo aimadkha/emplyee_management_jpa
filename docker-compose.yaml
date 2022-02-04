@@ -1,0 +1,26 @@
+version: "3"
+services:
+  emp_db:
+    image: mysql:8
+    environment:
+        MYSQL_ROOT_PASSWORD: aimad
+        MYSQL_DATABASE: emp_management_jpa
+    ports:
+      - 5001:3306
+   
+  emp_app:
+    container_name: manage_emp_app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8088:8080
+    depends_on:
+      - emp_db
+
+
+
+
+
+
+    
