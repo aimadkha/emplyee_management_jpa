@@ -4,7 +4,7 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps {
-				git 'https://github.com/aimadkha/emplyee_management_jpa.git', branch: 'main'
+				git url: 'https://github.com/aimadkha/emplyee_management_jpa.git', branch: 'main'
 				//sh './mvn clean compile'
 				bat 'mvn clean complie'
 				
