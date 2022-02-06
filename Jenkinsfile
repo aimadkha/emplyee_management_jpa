@@ -7,7 +7,7 @@ pipeline{
 				git url: 'https://github.com/aimadkha/emplyee_management_jpa.git', branch: 'main'
 				//sh './mvn clean compile'
 				sh 'mvn clean'
-				sh 'mvn complile'
+				sh 'mvn build'
 				
 			}
 		}
