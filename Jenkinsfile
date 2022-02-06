@@ -5,16 +5,16 @@ pipeline{
 		stage('Build'){
 			steps {
 				git 'https://github.com/aimadkha/emplyee_management_jpa.git'
-				//sh './mvnw clean compile'
-				bat '.\mvn clean complie'
+				sh './mvn clean compile'
+				//bat '.\mvn clean complie'
 				
 			}
 		}
 		
 		stage('Test'){
 			steps {
-				//sh './mvnw test'
-				bat '.\mvn test'
+				sh './mvn test'
+				//bat '.\mvn test'
 			}
 
 			post{
